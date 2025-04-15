@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tolower.c                                          :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 14:59:18 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/15 14:59:49 by timurray         ###   ########.fr       */
+/*   Created: 2025/04/15 15:01:44 by timurray          #+#    #+#             */
+/*   Updated: 2025/04/15 15:04:19 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
-int tolower(int c)
+void	*memset(void *s, int c, size_t n)
 {
-	if (( c >= 'A') || (c <= 'Z'))
-		return (c + 32);
-	return (c);
+
 }
