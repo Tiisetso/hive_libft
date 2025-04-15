@@ -1,16 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 09:05:06 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/15 12:06:08 by timurray         ###   ########.fr       */
+/*   Created: 2025/01/23 18:53:26 by timurray          #+#    #+#             */
+/*   Updated: 2025/04/15 12:27:26 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
+int	ft_strlen(char *str)
 {
-	return (c >= 0 && c <= 9);
+	int	count;
+
+	count = 0;
+	while (*str++)
+		count++;
+	return (count);
 }
