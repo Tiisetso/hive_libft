@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 09:20:48 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/15 11:22:58 by timurray         ###   ########.fr       */
+/*   Updated: 2025/04/15 11:41:27 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int ft_isalnum(int c)
 {
-	
+	return (ft_isalpha(c) || ft_isdigit(c));
 }
