@@ -6,10 +6,11 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 12:06:28 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/15 12:33:13 by timurray         ###   ########.fr       */
+/*   Updated: 2025/04/15 14:31:41 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c){
-return 0;	
+int	ft_isprint(int c)
+{
+	return (c >= 32 && c < 127);
 }
