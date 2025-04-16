@@ -1,44 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 15:01:44 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/16 11:33:59 by timurray         ###   ########.fr       */
+/*   Created: 2025/04/16 11:40:13 by timurray          #+#    #+#             */
+/*   Updated: 2025/04/16 12:09:03 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char	*mem;
-	unsigned char	fill;
+	unsigned char *temp_dest;
+	unsigned char *temp_src;
 
-	mem = (unsigned char *)s;
-	fill = (unsigned char)c;
+	temp_dest = dest;
+	temp_src = src;
 	while (n > 0)
 	{
-		*mem++ = fill;
+		*temp_dest++ = *temp_src++;
 		n--;
-	}
-	return (s);
+	}	
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int main ()
-// {
-//    char str[50];
-
-//    strcpy(str, "Welcome to Tutorials point");
-//    puts(str);
-
-//    ft_memset(str, '#', 7);
-//    puts(str);
-
-//    return(0);
-// }
