@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 14:40:22 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/16 15:08:56 by timurray         ###   ########.fr       */
+/*   Created: 2025/04/16 15:11:35 by timurray          #+#    #+#             */
+/*   Updated: 2025/04/16 15:25:19 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
-int	ft_toupper(int c)
+strlcpy(char *dst, const char *src, size_t size)
 {
-	if ((c >= 'a') || (c <= 'z'))
-		return (c - 32);
-	return (c);
+	unsigned int count;
+
+	count = 0;
+	whi;e	
 }
