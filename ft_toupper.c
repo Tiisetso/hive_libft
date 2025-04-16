@@ -6,15 +6,15 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 14:40:22 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/15 14:58:58 by timurray         ###   ########.fr       */
+/*   Updated: 2025/04/16 11:08:48 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int toupper(int c)
+int	toupper(int c)
 {
-	if (( c >= 'a') || (c <= 'z'))
+	if ((c >= 'a') || (c <= 'z'))
 		return (c - 32);
 	return (c);
 }
