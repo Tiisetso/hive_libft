@@ -6,13 +6,16 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 15:11:35 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/16 16:19:58 by timurray         ###   ########.fr       */
+/*   Updated: 2025/04/17 11:31:57 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-strlcpy(char *dst, const char *src, size_t size)
+size_t ft_strlcpy(char *dst, const char *src, size_t size)
 {
+	unsigned int count;
 
+	count = 0;
+	dst[count] = '\0';
 }
