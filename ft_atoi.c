@@ -1,33 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/16 15:11:35 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/22 20:07:28 by timurray         ###   ########.fr       */
+/*   Created: 2025/04/18 12:59:45 by timurray          #+#    #+#             */
+/*   Updated: 2025/04/18 13:03:48 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include "libft.h"
-
-size_t	ft_strlen(const char *s);
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+int atoi(const char *str)
 {
-	size_t length;
-
-
-	length = ft_strlen(src);
-	if (length == 0)
-		return (0);
-	while ((*src) && (dstsize > 0))
-	{
-		*dst++ = *src++;
-		dstsize--;
-	}
-	*dst = 0;
-	return (length);
+	//To handle overflow or not to handle overflow?
+	
 }
