@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 11:48:26 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/18 12:58:24 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/02 14:48:34 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <string.h>
+# include <stddef.h>
 
 extern int		ft_isalnum(int c);
 extern int		ft_isalpha(int c);
