@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 18:53:26 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/22 20:07:36 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/02 12:54:17 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	count;
 
 	count = 0;
-	while (*s++)
-		count++;
+	while (*(s + count))
+		count++; //TODO Check skipping past first index
 	return (count);
 }
