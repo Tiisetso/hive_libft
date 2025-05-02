@@ -1,23 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/23 18:53:26 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/22 20:07:36 by timurray         ###   ########.fr       */
+/*   Created: 2025/04/18 12:59:45 by timurray          #+#    #+#             */
+/*   Updated: 2025/04/18 13:03:48 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-size_t	ft_strlen(const char *s)
+int atoi(const char *str)
 {
-	size_t	count;
-
-	count = 0;
-	while (*s++)
-		count++;
-	return (count);
+	//To handle overflow or not to handle overflow?
+	
 }

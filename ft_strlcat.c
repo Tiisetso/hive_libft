@@ -1,23 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/23 18:53:26 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/22 20:07:36 by timurray         ###   ########.fr       */
+/*   Created: 2025/04/18 12:29:27 by timurray          #+#    #+#             */
+/*   Updated: 2025/04/22 20:07:22 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char *s)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	count;
+	size_t	length;
 
-	count = 0;
-	while (*s++)
-		count++;
-	return (count);
+	length = ft_strlen(src);
+	return (length);
 }
