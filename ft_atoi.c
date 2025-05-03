@@ -6,12 +6,38 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:59:45 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/18 13:03:48 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/03 13:58:10 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int atoi(const char *str)
+#include "libft.h"
+
+int	ft_isspace(char c);
+
+int ft_atoi(const char *nptr)
 {
-	//To handle overflow or not to handle overflow?
-	
+	int sign;
+	int n;
+	int index;
+
+	index = 0;
+	sign = 1;
+	n = 0;
+	while (ft_isspace(*(nptr + index)))
+		index++;
+	if (*(nptr + index)== '-')
+		sign = -1;
+	while (ft_isdigit(*(nptr + index)))
+	{
+		n = n * 10 + (*(nptr + index) - '0');
+		index++;
+	}
+	return (n * sign);
+}
+
+int	ft_isspace(char c)
+{
+	if ((c >= 9 && c <= 13) || (c == 32))
+		return (1);
+	return (0);
 }
