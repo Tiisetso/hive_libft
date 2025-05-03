@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:59:45 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/03 13:58:10 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/03 14:00:24 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int ft_atoi(const char *nptr)
 	n = 0;
 	while (ft_isspace(*(nptr + index)))
 		index++;
-	if (*(nptr + index)== '-')
+	if (*(nptr + index++)== '-')
 		sign = -1;
 	while (ft_isdigit(*(nptr + index)))
 	{
