@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 11:48:26 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/04 14:03:09 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/04 17:03:27 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,11 @@ extern int		ft_memcmp(const void *s1, const void *s2, size_t n);
 extern void		*ft_memcpy(void *dest, const void *src, size_t n);
 extern void		*ft_memmove(void *dest, const void *src, size_t n);
 extern void		*ft_memset(void *s, int c, size_t n);
+extern void		ft_putchar_fd(char c, int fd);
+extern void		ft_putendl_fd(char *s, int fd);
+extern void		ft_putnbr_fd(int n, int fd);
+extern void		ft_putnbr_fd(int n, int fd);
+extern void		ft_putstr_fd(char *s, int fd);
 extern char		*ft_strchr(const char *s, int c);
 extern char		*strdup(const char *s);
 extern size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
