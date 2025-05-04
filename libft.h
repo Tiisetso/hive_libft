@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 11:48:26 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/04 12:40:40 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/04 14:03:09 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ extern size_t	ft_strlen(const char *s);
 extern int		ft_strncmp(const char *s1, const char *s2, size_t n);
 extern char		*ft_strnstr(const char *big, const char *little, size_t len);
 extern char		*ft_strrchr(const char *s, int c);
+extern char		*ft_substr(char const *s, unsigned int start, size_t len);
 extern int		ft_tolower(int c);
 extern int		ft_toupper(int c);
 
