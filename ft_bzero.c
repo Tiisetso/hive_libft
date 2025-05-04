@@ -6,12 +6,11 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 11:32:38 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/16 11:39:50 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/04 12:40:50 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <strings.h>
 
 void	ft_bzero(void *s, size_t n)
 {

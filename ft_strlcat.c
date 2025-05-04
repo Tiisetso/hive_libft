@@ -6,11 +6,10 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:29:27 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/03 12:27:49 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/04 12:36:37 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)

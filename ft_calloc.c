@@ -6,13 +6,11 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 14:09:55 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/04 11:29:04 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/04 12:30:52 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "stdlib.h"
-#include "stdint.h"
 
 void *calloc(size_t nmemb, size_t size)
 {

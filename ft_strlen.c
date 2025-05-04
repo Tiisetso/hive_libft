@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 18:53:26 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/04 11:32:57 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/04 12:38:40 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ size_t	ft_strlen(const char *s)
 
 	count = 0;
 	while (*(s + count))
-		count++; //TODO Check skipping past first index
+		count++;
 	return (count);
 }
