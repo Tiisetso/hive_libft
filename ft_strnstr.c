@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 15:44:09 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/04 12:39:16 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 12:20:05 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	location = NULL;
-	if (strlen(little) == 0)
-		return (big);
+	if (ft_strlen(little) == 0)
+		return ((char *)big);
 	while ((*(big + i)) && (len-- > 0))
 	{
 		j = 0;
@@ -31,7 +31,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 				j++;
 			if (*(little + j) == '\0')
 			{
-				location = big + i;
+				location = (char *)big + i;
 				break;
 			}
 		}

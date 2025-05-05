@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 14:24:58 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/04 15:41:52 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 12:41:27 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ char *ft_strtrim(char const *s1, char const *set)
 	if (!s1 || !set) // TODO set null? What then?
 		return (NULL);
 	trim_start = 0;
-	trim_end = ft_strlen(s1);
-	while (isset((s1 + trim_start), set))
+	trim_end = ft_strlen(s1) - 1;
+	while (isset(*(s1 + trim_start), (char *)set))
 		trim_start++;
-	while((isset((s1 + trim_end), set)) && trim_end > 0)
+	while((isset(*(s1 + trim_end), (char *)set)) && trim_end > 0)
 		trim_end--;
 	trim_size = trim_end - trim_start;
 	if (trim_size <= 0)

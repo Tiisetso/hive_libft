@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/04 15:52:46 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/05 12:27:38 by timurray         ###   ########.fr       */
+/*   Created: 2025/05/05 10:45:34 by timurray          #+#    #+#             */
+/*   Updated: 2025/05/05 12:31:19 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
-{
-	while (*s)
-	{
-		ft_putchar_fd(*s, fd);
-		s++;
-	}
-}
+// char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+// {
+	
+// }

@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 11:40:13 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/04 12:34:36 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 12:45:12 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,14 @@
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char *temp_dest;
-	unsigned char *temp_src;
+	const unsigned char *temp_src;
 
 	temp_dest = dest;
-	temp_src = src;
+	temp_src = (const unsigned char *)src;
 	while (n > 0)
 	{
 		*temp_dest++ = *temp_src++;
 		n--;
-	}	
+	}
+	return (dest);
 }

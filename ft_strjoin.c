@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 14:04:44 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/04 14:21:28 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 12:31:13 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ char *ft_strjoin(char const *s1, char const *s2)
 	size_t	s1_length;
 	size_t	s2_length;
 	size_t	s_size;
-	size_t	s_length;
 	char 	*s;
 
 	if (!s1 || !s2)

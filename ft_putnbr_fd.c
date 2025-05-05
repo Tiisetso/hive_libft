@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 16:56:54 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/04 17:03:01 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 12:18:18 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ void ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n / 10, fd);
 	}
 	c = (n % 10) + '0';
-	ft_putchar_fd(&c, fd);
+	ft_putchar_fd(c, fd);
 }
