@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 14:04:44 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/05 12:31:13 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 14:21:40 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	ft_memcpy(s, s1, s1_length);
 	ft_memcpy(s + s1_length, s2, s2_length);
-	*(s + s_size) = '\0';
+	s[s_size - 1] = '\0';
 	return (s);
 }

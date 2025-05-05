@@ -6,13 +6,13 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 17:11:56 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/05 13:29:09 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 14:03:42 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	char	*strdup;
 	size_t	len;

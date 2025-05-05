@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 11:48:26 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/05 12:29:06 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 14:20:29 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 extern int		ft_atoi(const char *nptr);
 extern void		ft_bzero(void *s, size_t n);
-extern void		*calloc(size_t nmemb, size_t size);
+extern void		*ft_calloc(size_t nmemb, size_t size);
 extern int		ft_isalnum(int c);
 extern int		ft_isalpha(int c);
 extern int		ft_isascii(int c);
@@ -38,8 +38,9 @@ extern void		ft_putnbr_fd(int n, int fd);
 extern void		ft_putnbr_fd(int n, int fd);
 extern void		ft_putstr_fd(char *s, int fd);
 extern char		*ft_strchr(const char *s, int c);
-extern char		*strdup(const char *s);
+extern char		*ft_strdup(const char *s);
 extern void		ft_striteri(char *s, void (*f)(unsigned int, char *));
+extern char		*ft_strjoin(char const *s1, char const *s2);
 extern size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 extern size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 extern size_t	ft_strlen(const char *s);

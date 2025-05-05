@@ -6,13 +6,13 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 14:09:55 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/05 13:26:29 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 14:04:58 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 
