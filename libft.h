@@ -13,10 +13,10 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <stddef.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <unistd.h>
+# include <stddef.h>
+# include <stdint.h>
+# include <stdlib.h>
+# include <unistd.h>
 
 extern int		ft_atoi(const char *nptr);
 extern void		ft_bzero(void *s, size_t n);
@@ -39,7 +39,7 @@ extern void		ft_putnbr_fd(int n, int fd);
 extern void		ft_putstr_fd(char *s, int fd);
 extern char		*ft_strchr(const char *s, int c);
 extern char		*strdup(const char *s);
-extern void 	ft_striteri(char *s, void (*f)(unsigned int, char*));
+extern void		ft_striteri(char *s, void (*f)(unsigned int, char *));
 extern size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 extern size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 extern size_t	ft_strlen(const char *s);

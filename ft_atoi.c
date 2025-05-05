@@ -14,18 +14,18 @@
 
 static int	ft_isspace(char c);
 
-int ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
-	int sign;
-	int n;
-	int index;
+	int	sign;
+	int	n;
+	int	index;
 
 	index = 0;
 	sign = 1;
 	n = 0;
 	while (ft_isspace(*(nptr + index)))
 		index++;
-	if (*(nptr + index++)== '-')
+	if (*(nptr + index++) == '-')
 		sign = -1;
 	while (ft_isdigit(*(nptr + index)))
 	{

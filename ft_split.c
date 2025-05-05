@@ -25,7 +25,7 @@
 // 	*splitstr = (char *)malloc(strcount * sizeof(char *) + 1);
 // 	if (!**splitstr)
 // 		return (NULL);
-	
+
 // }
 
 // static size_t	ft_strcount(char *s, char c)

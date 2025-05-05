@@ -14,9 +14,9 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	unsigned	int i;
-	unsigned	int j;
-	char		*location;
+	unsigned int	i;
+	unsigned int	j;
+	char			*location;
 
 	i = 0;
 	location = NULL;
@@ -32,7 +32,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			if (*(little + j) == '\0')
 			{
 				location = (char *)big + i;
-				break;
+				break ;
 			}
 		}
 		i++;
