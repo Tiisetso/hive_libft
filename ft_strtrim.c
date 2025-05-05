@@ -6,13 +6,13 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 14:24:58 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/05 13:29:39 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 15:42:20 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		isset(char c, char *set);
+static int		isset(char c, char *set);
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -40,7 +40,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (s);
 }
 
-int	isset(char c, char *set)
+static int	isset(char c, char *set)
 {
 	char	*check_set;
 

@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 14:59:18 by timurray          #+#    #+#             */
-/*   Updated: 2025/04/16 11:09:54 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 16:12:26 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	if ((c >= 'A') || (c <= 'Z'))
+	if ((c >= 'A') && (c <= 'Z'))
 		return (c + 32);
 	return (c);
 }

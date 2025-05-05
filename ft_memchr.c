@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 13:15:33 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/04 12:32:11 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 16:01:31 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	unsigned char	*stemp;
 
 	stemp = (unsigned char *)s;
-	while (n > 0)
+	while (n--)
 	{
-		if (*stemp == c)
+		if (*stemp == (unsigned char)c)
 			return ((void *)stemp);
 		stemp++;
-		n--;
 	}
 	return (NULL);
 }
