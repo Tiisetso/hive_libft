@@ -25,10 +25,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		j = 0;
 		if (*(big + i) == *(little + j))
 		{
-			while ((i+j) < len && *(big + i + j) == *(little + j))
+			while ((i + j) < len && *(big + i + j) == *(little + j))
 				j++;
 			if (*(little + j) == '\0')
-				return(char *)big + i;
+				return ((char *)big + i);
 		}
 		i++;
 	}
