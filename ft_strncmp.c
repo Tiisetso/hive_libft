@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 12:25:26 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/06 15:37:16 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/06 17:47:02 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (result);
 }
-
-// #include <stdio.h> //TODO Remove
-// int main (void)
-// {
-// 	const char *s1 = "hello";
-// 	const char *s2 = "hellow";
-// 	size_t n = 4;
-// 	printf("%i",ft_strncmp(s1,s2,n));
-// 	return (0);
-// }

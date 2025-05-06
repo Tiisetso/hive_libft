@@ -6,13 +6,13 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 14:24:58 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/06 09:01:52 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/06 18:06:48 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	isset(char c, const char *set)
+static int	ft_isset(char c, const char *set)
 {
 	while (*set)
 	{
@@ -33,14 +33,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s1 || !set)
 		return (NULL);
 	trim_start = 0;
-	trim_end = ft_strlen(s1);
-	while (isset(*(s1 + trim_start), set))
+	trim_end = ft_strlen(s1) - 1;
+	while (ft_isset(*(s1 + trim_start), set))
 		trim_start++;
-	while ((isset(*(s1 + trim_end), set)) && trim_end > 0)
+	while ((ft_isset(*(s1 + trim_end), set)) && trim_end > 0)
 		trim_end--;
-	trim_size = trim_end - trim_start + 1;
-	if (trim_size <= 0)
+	if (trim_end < trim_start)
 		return (ft_strdup(""));
+	trim_size = trim_end - trim_start + 1;
 	s = (char *)malloc((trim_size) * sizeof(char) + 1);
 	if (!s)
 		return (NULL);
