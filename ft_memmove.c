@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 12:26:54 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/04 12:34:46 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 17:39:54 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,21 +19,17 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	tdest = (unsigned char *)dest;
 	tsrc = (unsigned char *)src;
-	if (dest <= src)
+	if (tdest <= tsrc)
 	{
-		while (n-- > 0)
-		{
+		while (n--)
 			*tdest++ = *tsrc++;
-		}
 	}
-	else if (dest > src)
+	else if (tdest > tsrc)
 	{
 		tdest = tdest + (n - 1);
 		tsrc = tsrc + (n - 1);
-		while (n-- > 0)
-		{
+		while (n--)
 			*tdest-- = *tsrc--;
-		}
 	}
 	return (dest);
 }

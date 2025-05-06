@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 15:44:09 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/05 12:20:05 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 18:06:12 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,23 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	unsigned int	i;
-	unsigned int	j;
-	char			*location;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
-	location = NULL;
 	if (ft_strlen(little) == 0)
 		return ((char *)big);
-	while ((*(big + i)) && (len-- > 0))
+	while ((*(big + i)) && (i < len))
 	{
 		j = 0;
 		if (*(big + i) == *(little + j))
 		{
-			while (*(big + i + j) == *(little + j))
+			while ((i+j) < len && *(big + i + j) == *(little + j))
 				j++;
 			if (*(little + j) == '\0')
-			{
-				location = (char *)big + i;
-				break ;
-			}
+				return(char *)big + i;
 		}
 		i++;
 	}
-	return (location);
+	return (NULL);
 }

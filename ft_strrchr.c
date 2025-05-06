@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 11:57:19 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/04 12:40:18 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 17:48:36 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
 	while (*(s + i))
 		i++;
-	while (i > 0)
+	while (i >= 0)
 	{
-		if (*(s + i) == c)
+		if (*(s + i) == (char)c)
 			return ((char *)(s + i));
 		i--;
 	}

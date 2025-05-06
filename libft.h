@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 11:48:26 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/05 15:43:31 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/06 09:53:59 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ extern void		ft_putendl_fd(char *s, int fd);
 extern void		ft_putnbr_fd(int n, int fd);
 extern void		ft_putnbr_fd(int n, int fd);
 extern void		ft_putstr_fd(char *s, int fd);
+extern char		**ft_split(char const *s, char c);
 extern char		*ft_strchr(const char *s, int c);
 extern char		*ft_strdup(const char *s);
 extern void		ft_striteri(char *s, void (*f)(unsigned int, char *));

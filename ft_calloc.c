@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 14:09:55 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/05 14:04:58 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 18:11:42 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 
-	if ((nmemb == 0 || size == 0) || (nmemb > SIZE_MAX / size))
+	if (size != 0 && (nmemb > SIZE_MAX / size))
 		return (NULL);
 	ptr = malloc(nmemb * size);
 	if (!ptr)

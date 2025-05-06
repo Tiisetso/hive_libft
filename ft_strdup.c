@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 17:11:56 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/05 14:03:42 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/05 16:28:13 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,10 @@ char	*ft_strdup(const char *s)
 	size_t	len;
 
 	len = ft_strlen(s);
-	strdup = (char *)malloc(len * sizeof(char) + 1);
+	strdup = (char *)malloc((len + 1) * sizeof(char));
 	if (strdup == NULL)
 		return ((char *) NULL);
-	while (*s)
-		*strdup++ = *s++;
-	*strdup = '\0';
+	ft_memcpy(strdup, s, len);
+	strdup[len] = '\0';
 	return (strdup);
 }
