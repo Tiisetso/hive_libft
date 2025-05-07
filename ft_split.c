@@ -6,53 +6,55 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 15:47:59 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/06 11:33:46 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/07 13:49:59 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 static size_t	ft_strcount(char *s, char c);
-static void		free_splitstr(char **splitstr, size_t i);
+static char		**free_str(char **str, size_t i);
 static char		*get_word(const char *start, size_t length);
+static size_t	get_str_len(char const *s, char c);
 
 char	**ft_split(char const *s, char c)
 {
-	char		**splitstr;
-	const char	*str_start;
-	size_t		i;
-	size_t		str_length;
+	char	**str;
+	size_t	i;
 
 	if (!s)
 		return (NULL);
-	splitstr = (char **)malloc(((ft_strcount((char *)s, c)) + 1)
-			* sizeof(char *));
-	if (!splitstr)
+	str = (char **)malloc(((ft_strcount((char *)s, c)) + 1) * sizeof(char *));
+	if (!str)
 		return (NULL);
 	i = 0;
 	while (*s)
 	{
 		if (*s != c)
 		{
-			str_start = s;
-			str_length = 0;
-			while (*s && *s != c)
-			{
-				s++;
-				str_length++;
-			}
-			splitstr[i] = get_word(str_start, str_length);
-			if (!splitstr[i++])
-			{
-				free_splitstr(splitstr, i - 1);
-				return (NULL);
-			}
+			str[i] = get_word(s, get_str_len(s, c));
+			s = s + get_str_len(s, c);
+			if (!str[i++])
+				return (free_str(str, i - 1));
 		}
 		else
 			s++;
 	}
-	splitstr[i] = '\0';
-	return (splitstr);
+	str[i] = '\0';
+	return (str);
+}
+
+static size_t	get_str_len(char const *s, char c)
+{
+	size_t	len;
+
+	len = 0;
+	while (*s && *s != c)
+	{
+		s++;
+		len++;
+	}
+	return (len);
 }
 
 static char	*get_word(const char *start, size_t length)
@@ -73,11 +75,12 @@ static char	*get_word(const char *start, size_t length)
 	return (word);
 }
 
-static void	free_splitstr(char **splitstr, size_t i)
+static char	**free_str(char **str, size_t i)
 {
 	while (i--)
-		free(splitstr[i]);
-	free(splitstr);
+		free(str[i]);
+	free(str);
+	return (NULL);
 }
 
 static size_t	ft_strcount(char *s, char c)
