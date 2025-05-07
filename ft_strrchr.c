@@ -6,7 +6,7 @@
 /*   By: timurray <timurray@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 11:57:19 by timurray          #+#    #+#             */
-/*   Updated: 2025/05/05 17:48:36 by timurray         ###   ########.fr       */
+/*   Updated: 2025/05/07 13:59:38 by timurray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// int main (void)
-// {
-//     int c = 'h';
-//     const char *s = "1234h6789";
-//     printf("%s\n", ft_strrchr(s,c));
-
-//     return (0);
-// }
